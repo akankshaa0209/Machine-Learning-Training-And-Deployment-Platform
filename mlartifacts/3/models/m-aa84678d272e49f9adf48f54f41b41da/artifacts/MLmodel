@@ -1,0 +1,31 @@
+artifact_path: mlflow-artifacts:/3/models/m-aa84678d272e49f9adf48f54f41b41da/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.0
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.10.1
+model_id: m-aa84678d272e49f9adf48f54f41b41da
+model_size_bytes: 3268850
+model_uuid: m-aa84678d272e49f9adf48f54f41b41da
+prompts: null
+run_id: 2834c45f8d924d618cb8e6e7f81fcf14
+signature:
+  inputs: '[{"type": "string", "name": "rideable_type", "required": true}, {"type":
+    "double", "name": "trip_distance", "required": true}, {"type": "string", "name":
+    "start_end_id", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-03-10 18:29:31.655323'
